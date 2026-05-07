@@ -38,7 +38,7 @@ def load_model():
     model.load_state_dict(
         torch.load("convnext.pth", map_location=device)
     )
-
+ 
     model.to(device)
     model.eval()
 
